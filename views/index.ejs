@@ -1,0 +1,45 @@
+
+<% include partials/header.ejs %>
+
+<div class="container_item">
+    <form class="from" action="/Todo/new" method="POST">
+        <input type="text" class="form__field" placeholder="Your item to do!" name="item"/>
+        <button type="submit" class="btn btn--primary btn--inside ">Add activity</button>
+    </form>
+</div>
+
+
+        <div class="container_list">
+            <table border="0" class="table table-hover table-striped">
+              <tbody>
+                <% for(var i=0; i < todoList.length; i++) { %>
+                  <tr>
+                    <td>
+                        <%= i+1 %>
+                    </td>
+                    <td>
+                        <%= todoList[i].name %>
+                    </td>
+                    <td >
+                      <form class="from" method="GET" action="/Todo/<%= todoList[i]._id %>/edite">
+                        <button type="submit" class="button" id="edite" name="item"><i class="fa fa-pencil-square-o"></i></button>
+                      </form>
+                    </td>
+                    <td >
+                      <form class="from" method="POST" action="/todo/<%= todoList[i]._id %>/delete">
+                        <button type="submit" class="button" id="delete" name="delete"><i class="fa fa-trash-o"></i></button>
+                      </form>
+                    </td>
+                  </tr>
+                <% } %>
+              </tbody>
+            </table>
+          </div>
+
+        <div class="footer">
+            <p>Developed by <a href="https://github.com/ChennaAbdelfedtah" target="_blank">Abdelfetah Chenna</a>.</p>
+        </div>
+    </div>
+</body>
+
+</html>
