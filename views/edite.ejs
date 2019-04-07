@@ -1,0 +1,14 @@
+<% include partials/header.ejs %>
+
+<div class="container_item">
+    <form class="from" action="/Todo/<%= Todo._id %>" method="POST">
+        <input type="text" class="form__field" name ="newitem" value= "<%= Todo.name %>"/>
+        <button type="submit" class="btn btn--primary btn--inside ">Update</button>
+    </form>
+  <form class="from" action="/" method="GET">
+    <div>
+      <br>
+        <button type="submit" class="btn btn--primary btn--inside "> Back </button>
+    </div>
+  </form>
+</div>
