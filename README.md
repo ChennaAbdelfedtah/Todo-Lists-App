@@ -1,5 +1,4 @@
 Project Title 
-
 Todo Lists App
 
 Getting Started
