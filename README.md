@@ -1,8 +1,7 @@
-Project Title 
+Project Title
 Todo Lists App
 
 Getting Started
-
 Downloade the file   Todo-Lists-App
 
 Perequisites
