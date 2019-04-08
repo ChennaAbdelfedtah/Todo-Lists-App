@@ -1,4 +1,5 @@
-Project Title Todo Lists App
+Project Title
+Todo Lists App
 
 Getting Started
 Downloade the file   Todo-Lists-App
